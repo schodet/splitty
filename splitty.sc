@@ -7,12 +7,14 @@ format C 41 2 0
 format D 10 0 0
 format E 10 3 0
 format F 10 3 0
-mark a F3
+format H 10 4 0
+mark a I2
 mark b F2
 mark c F5
 leftstring A0 = "Quantity"
 leftstring B0 = "Designator"
 leftstring D0 = "Farnell"
+leftstring G0 = "LCSC"
 let A1 = 32
 leftstring B1 = "SW0-38"
 leftstring C1 = "Cherry MX switches"
@@ -22,24 +24,36 @@ leftstring C2 = "Capacitor 0603 1μF >6V X7R"
 let D2 = 2346895
 let E2 = 0.055
 let F2 = E2*A2
+rightstring G2 = "C93816"
+let H2 = 0.0172
+let I2 = A2*H2
 let A3 = 2
 leftstring B3 = "C3, C4"
 leftstring C3 = "Capacitor 0603 10pF >6V C0G/NP0"
 let D3 = 2496879
 let E3 = 0.013
 let F3 = E3*A3
+rightstring G3 = "C106245"
+let H3 = 0.0084
+let I3 = A3*H3
 let A4 = 6
 leftstring B4 = "C5-10"
 leftstring C4 = "Capacitor 0603 100nF >6V X7R"
 let D4 = 2320803
 let E4 = 0.037
 let F4 = E4*A4
+rightstring G4 = "C187860"
+let H4 = 0.0231
+let I4 = A4*H4
 let A5 = 32
 leftstring B5 = "D0-38"
 leftstring C5 = "Diode SOD-123"
 let D5 = 2760402
 let E5 = 0.079
 let F5 = E5*A5
+rightstring G5 = "C83528"
+let H5 = 0.0091
+let I5 = A5*H5
 let A6 = 2
 leftstring B6 = "J1,J2"
 leftstring C6 = "Connector USB Micro-B Würth 629105150521"
@@ -70,12 +84,18 @@ leftstring C10 = "ATmega32U4-AU"
 let D10 = 2443182
 let E10 = 3.57
 let F10 = E10*A10
+rightstring G10 = "C44854"
+let H10 = 3.1513
+let I10 = A10*H10
 let A11 = 2
 leftstring B11 = "U2, U3"
 leftstring C11 = "ST USBLC6-2SC6"
 let D11 = 1269406
 let E11 = 0.313
 let F11 = E11*A11
+rightstring G11 = "C7519"
+let H11 = 0.1456
+let I11 = A11*H11
 let A12 = 1
 leftstring B12 = "Y1"
 leftstring C12 = "Crystal Abracon ABM3 16MHz"
@@ -88,4 +108,4 @@ rightstring E14 = "Total x2"
 let F14 = F13*2
 pad 1 B0:B12
 pad 1 B14
-goto A2
+goto A0
