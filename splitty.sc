@@ -7,8 +7,10 @@ format C 41 2 0
 format D 10 0 0
 format E 10 3 0
 format F 10 3 0
+format G 10 0 0
 format H 10 4 0
-mark a I2
+format I 10 3 0
+mark a F19
 mark b F2
 mark c F5
 leftstring A0 = "Quantity"
@@ -21,7 +23,7 @@ leftstring C1 = "Cherry MX switches"
 let A2 = 3
 leftstring B2 = "C1, C11, C12"
 leftstring C2 = "Capacitor 0603 1μF >6V X7R"
-let D2 = 2346895
+rightstring D2 = "2346895"
 let E2 = 0.055
 let F2 = E2*A2
 rightstring G2 = "C93816"
@@ -30,7 +32,7 @@ let I2 = A2*H2
 let A3 = 2
 leftstring B3 = "C3, C4"
 leftstring C3 = "Capacitor 0603 10pF >6V C0G/NP0"
-let D3 = 2496879
+rightstring D3 = "2496879"
 let E3 = 0.013
 let F3 = E3*A3
 rightstring G3 = "C106245"
@@ -39,7 +41,7 @@ let I3 = A3*H3
 let A4 = 6
 leftstring B4 = "C5-10"
 leftstring C4 = "Capacitor 0603 100nF >6V X7R"
-let D4 = 2320803
+rightstring D4 = "2320803"
 let E4 = 0.037
 let F4 = E4*A4
 rightstring G4 = "C187860"
@@ -48,7 +50,7 @@ let I4 = A4*H4
 let A5 = 32
 leftstring B5 = "D0-38"
 leftstring C5 = "Diode SOD-123"
-let D5 = 2760402
+rightstring D5 = "2760402"
 let E5 = 0.079
 let F5 = E5*A5
 rightstring G5 = "C83528"
@@ -57,31 +59,31 @@ let I5 = A5*H5
 let A6 = 2
 leftstring B6 = "J1,J2"
 leftstring C6 = "Connector USB Micro-B Würth 629105150521"
-let D6 = 2470822
+rightstring D6 = "2470822"
 let E6 = 1.36
 let F6 = E6*A6
 let A7 = 2
 leftstring B7 = "R1, R2"
 leftstring C7 = "Resistor 0603 22Ω"
-let D7 = 9331891
+rightstring D7 = "9331891"
 let E7 = 0.002
 let F7 = E7*A7
 let A8 = 3
 leftstring B8 = "R3, R4, R5"
 leftstring C8 = "Resistor 0603 4.7kΩ"
-let D8 = 9332154
+rightstring D8 = "9332154"
 let E8 = 0.002
 let F8 = E8*A8
 let A9 = 1
 leftstring B9 = "SW40"
 leftstring C9 = "Tactile Switches Omron B3U-3000P-B"
-let D9 = 1333656
+rightstring D9 = "1333656"
 let E9 = 0.42
 let F9 = E9*A9
 let A10 = 1
 leftstring B10 = "U1"
 leftstring C10 = "ATmega32U4-AU"
-let D10 = 2443182
+rightstring D10 = "2443182"
 let E10 = 3.57
 let F10 = E10*A10
 rightstring G10 = "C44854"
@@ -90,7 +92,7 @@ let I10 = A10*H10
 let A11 = 2
 leftstring B11 = "U2, U3"
 leftstring C11 = "ST USBLC6-2SC6"
-let D11 = 1269406
+rightstring D11 = "1269406"
 let E11 = 0.313
 let F11 = E11*A11
 rightstring G11 = "C7519"
@@ -99,13 +101,49 @@ let I11 = A11*H11
 let A12 = 1
 leftstring B12 = "Y1"
 leftstring C12 = "Crystal Abracon ABM3 16MHz"
-let D12 = 1611806
+rightstring D12 = "1611806"
 let E12 = 0.66
 let F12 = E12*A12
-rightstring E13 = "Total"
-let F13 = @sum(F2:F12)
-rightstring E14 = "Total x2"
-let F14 = F13*2
+let A13 = 8
+leftstring C13 = "M2 screw, 6mm"
+rightstring D13 = "1420386"
+let E13 = 0.0117
+let F13 = E13*A13
+let A14 = 16
+leftstring C14 = "M2 nuts"
+rightstring D14 = "1419445"
+let E14 = 0.0094
+let F14 = E14*A14
+rightstring E15 = "Total"
+let F15 = @sum(F2:F14)
+rightstring E16 = "Total x2"
+let F16 = F15*2
+leftstring D18 = "JLCPCB by"
+leftstring G18 = "JLCPCB by"
+let A19 = 1
+leftstring C19 = "Printed Circuit Board (green)"
+let D19 = 5
+let E19 = 11.25
+let F19 = E19/D19
+let G19 = 10
+let H19 = 15.2
+let I19 = H19/G19
+let A20 = 1
+leftstring C20 = "Front Plate (white)"
+let D20 = 5
+let E20 = 18.55
+let F20 = E20/D20
+let G20 = 10
+let H20 = 22.49
+let I20 = H20/G20
+let A21 = 1
+leftstring C21 = "Back Plate (white)"
+let D21 = 5
+let E21 = 18.55
+let F21 = E21/D21
+let G21 = 10
+let H21 = 22.49
+let I21 = H21/G21
 pad 1 B0:B12
-pad 1 B14
-goto A0
+pad 1 B16
+goto C0
