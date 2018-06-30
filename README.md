@@ -1,7 +1,13 @@
 Splitty
 =======
 
-![Splitty](img/splitty.png)
+![Splitty](img/splitty_for_scale.jpg)
+
+![Splitty Stack](img/stack_view.jpg)
+
+![Splitty PCB](img/splitty.png)
+
+[More pictures](gallery.md)
 
 This is a split ergonomic keyboard based on the Ergodox layout without the
 thumb cluster. It uses 32 keys per sides with Cherry MX compatibles switches,
@@ -93,6 +99,18 @@ different), and an extra set of boards.
 Grand total: 159.97 €
 
 Grand total (for one keyboard): 111.98 €
+
+Slim stack
+----------
+
+A special attachment is used to make sure the stack is as slim as possible:
+
+![Screw attachment](img/screw.png)
+
+Assembly
+--------
+
+See the [build log](build.md)
 
 License
 -------
