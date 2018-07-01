@@ -107,10 +107,10 @@ A special attachment is used to make sure the stack is as slim as possible:
 
 ![Screw attachment](img/screw.png)
 
-Assembly
---------
+Assembly and more
+-----------------
 
-See the [build log](build.md)
+See the [build log](build.md) and the [FAQ](faq.md).
 
 License
 -------
