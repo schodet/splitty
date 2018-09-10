@@ -1,13 +1,3 @@
 (fp_lib_table
-  (lib (name Button_Switch_Keyboard)(type KiCad)(uri "$(KIPRJMOD)/kicad-footprints/Button_Switch_Keyboard.pretty")(options "")(descr ""))
-  (lib (name Capacitor_SMD)(type KiCad)(uri "$(KIPRJMOD)/kicad-footprints/Capacitor_SMD.pretty")(options "")(descr ""))
-  (lib (name Crystal)(type KiCad)(uri "$(KIPRJMOD)/kicad-footprints/Crystal.pretty")(options "")(descr ""))
-  (lib (name Diode_SMD)(type KiCad)(uri "$(KIPRJMOD)/kicad-footprints/Diode_SMD.pretty")(options "")(descr ""))
-  (lib (name Package_QFP)(type KiCad)(uri "$(KIPRJMOD)/kicad-footprints/Package_QFP.pretty")(options "")(descr ""))
-  (lib (name Resistor_SMD)(type KiCad)(uri "$(KIPRJMOD)/kicad-footprints/Resistor_SMD.pretty")(options "")(descr ""))
   (lib (name splitty)(type KiCad)(uri "$(KIPRJMOD)/splitty.pretty")(options "")(descr ""))
-  (lib (name Connector_USB)(type KiCad)(uri "$(KIPRJMOD)/kicad-footprints/Connector_USB.pretty")(options "")(descr ""))
-  (lib (name Package_TO_SOT_SMD)(type KiCad)(uri "$(KIPRJMOD)/kicad-footprints/Package_TO_SOT_SMD.pretty")(options "")(descr ""))
-  (lib (name MountingHole)(type KiCad)(uri "$(KIPRJMOD)/kicad-footprints/MountingHole.pretty")(options "")(descr ""))
-  (lib (name Connector_PinHeader_2.54mm)(type KiCad)(uri "$(KIPRJMOD)/kicad-footprints/Connector_PinHeader_2.54mm.pretty")(options "")(descr ""))
 )

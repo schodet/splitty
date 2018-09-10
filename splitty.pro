@@ -1,4 +1,4 @@
-update=dim. 20 mai 2018 14:43:28 CEST
+update=lun. 10 sept. 2018 20:48:14 CEST
 version=1
 last_client=kicad
 [pcbnew]
@@ -28,12 +28,3 @@ version=1
 [eeschema]
 version=1
 LibDir=
-[eeschema/libraries]
-LibName1=kicad-symbols/MCU_Microchip_ATmega
-LibName2=kicad-symbols/Switch
-LibName3=kicad-symbols/power
-LibName4=kicad-symbols/Device
-LibName5=kicad-symbols/Connector_Specialized
-LibName6=kicad-symbols/Connector_Generic
-LibName7=kicad-symbols/Mechanical
-LibName8=splitty
