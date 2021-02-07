@@ -1,30 +1,18 @@
 EESchema Schematic File Version 4
-LIBS:splitty-cache
-EELAYER 26 0
+EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 1
-Title ""
-Date ""
-Rev ""
+Title "Splitty ergonomic keyboard"
+Date "2018-05-01"
+Rev "1"
 Comp ""
 Comment1 ""
 Comment2 ""
-Comment3 ""
-Comment4 ""
+Comment3 "License: MIT"
+Comment4 "Copyright © 2018 Nicolas Schodet"
 $EndDescr
-$Comp
-L MCU_Microchip_ATmega:ATmega32U4-AU U1
-U 1 1 5AD20652
-P 3400 2800
-F 0 "U1" H 2450 4500 50  0000 L BNN
-F 1 "ATmega32U4-AU" H 3700 1100 50  0000 L TNN
-F 2 "Package_QFP:TQFP-44_10x10mm_P0.8mm" H 3400 2800 50  0001 C CIN
-F 3 "" H 3400 2800 50  0001 C CNN
-	1    3400 2800
-	1    0    0    -1  
-$EndComp
 $Comp
 L Switch:SW_Push SW0
 U 1 1 5AD206A3
@@ -215,17 +203,6 @@ Wire Wire Line
 	1700 4200 1700 4300
 Wire Wire Line
 	1700 4600 1700 4700
-$Comp
-L Connector:USB_B_Micro J1
-U 1 1 5AE7A997
-P 1000 5700
-F 0 "J1" H 800 6150 50  0000 L CNN
-F 1 "USB_B_Micro" H 800 6050 50  0000 L CNN
-F 2 "splitty:USB_Micro-B_Wuerth_629105150521_BothSides" H 1150 5650 50  0001 C CNN
-F 3 "" H 1150 5650 50  0001 C CNN
-	1    1000 5700
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	2800 1300 2700 1300
 Wire Wire Line
@@ -238,13 +215,9 @@ Wire Wire Line
 	2700 1800 2500 1800
 Wire Wire Line
 	2800 2400 2700 2400
-Wire Wire Line
-	1600 5700 1300 5700
 NoConn ~ 1300 5900
 Wire Wire Line
 	900  6200 900  6100
-Wire Wire Line
-	900  6100 1000 6100
 $Comp
 L Device:C C3
 U 1 1 5AE81AE9
@@ -484,14 +457,11 @@ F 3 "" H 2100 5800 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	1300 5800 1400 5800
-Wire Wire Line
 	1400 5800 1400 5900
 Wire Wire Line
 	1400 5900 1600 5900
 Wire Wire Line
 	2650 5800 2800 5800
-Connection ~ 1000 6100
 $Comp
 L Device:C C9
 U 1 1 5AEA368F
@@ -577,8 +547,6 @@ Connection ~ 1500 6100
 Wire Wire Line
 	2800 5400 2800 5500
 Connection ~ 2800 5800
-Wire Wire Line
-	2800 5500 1300 5500
 Connection ~ 2800 5500
 Wire Wire Line
 	3300 5900 3200 5900
@@ -1502,17 +1470,6 @@ Connection ~ 10500 3400
 Connection ~ 10500 2000
 Text Label 10500 1000 0    60   ~ 0
 col6
-$Comp
-L Connector:USB_B_Micro J2
-U 1 1 5AF9B5B9
-P 5850 7000
-F 0 "J2" H 5650 7450 50  0000 L CNN
-F 1 "USB_B_Micro" H 5650 7350 50  0000 L CNN
-F 2 "splitty:USB_Micro-B_Wuerth_629105150521_BothSides" H 6000 6950 50  0001 C CNN
-F 3 "" H 6000 6950 50  0001 C CNN
-	1    5850 7000
-	-1   0    0    -1  
-$EndComp
 Wire Wire Line
 	3600 6600 3600 7100
 Connection ~ 3700 6600
@@ -1768,8 +1725,6 @@ Wire Wire Line
 Wire Wire Line
 	1400 4200 1700 4200
 Wire Wire Line
-	1000 6100 1500 6100
-Wire Wire Line
 	5850 7400 5950 7400
 Wire Wire Line
 	5100 7400 5850 7400
@@ -1916,7 +1871,6 @@ Wire Wire Line
 	2200 2100 2600 2100
 Wire Wire Line
 	2800 1900 2800 2100
-Connection ~ 2800 2100
 Connection ~ 2600 2100
 Wire Wire Line
 	2600 2100 2800 2100
@@ -1953,4 +1907,50 @@ Wire Wire Line
 Connection ~ 10500 1300
 Wire Wire Line
 	10500 1300 10500 2000
+Wire Wire Line
+	1600 5700 1300 5700
+Wire Wire Line
+	1300 5800 1400 5800
+Wire Wire Line
+	2800 5500 1300 5500
+$Comp
+L Connector:USB_B_Micro J1
+U 1 1 60232DE7
+P 1000 5700
+F 0 "J1" H 1057 6167 50  0000 C CNN
+F 1 "USB_B_Micro" H 1057 6076 50  0000 C CNN
+F 2 "splitty:USB_Micro-B_Wuerth_629105150521_BothSides" H 1150 5650 50  0001 C CNN
+F 3 "~" H 1150 5650 50  0001 C CNN
+	1    1000 5700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	900  6100 1000 6100
+Connection ~ 900  6100
+Wire Wire Line
+	1500 6100 1000 6100
+Connection ~ 1000 6100
+$Comp
+L Connector:USB_B_Micro J2
+U 1 1 60283DA3
+P 5850 7000
+F 0 "J2" H 5907 7467 50  0000 C CNN
+F 1 "USB_B_Micro" H 5907 7376 50  0000 C CNN
+F 2 "splitty:USB_Micro-B_Wuerth_629105150521_BothSides" H 6000 6950 50  0001 C CNN
+F 3 "~" H 6000 6950 50  0001 C CNN
+	1    5850 7000
+	-1   0    0    -1  
+$EndComp
+$Comp
+L MCU_Microchip_ATmega:ATmega32U4-AU U1
+U 1 1 602BC75E
+P 3400 2800
+F 0 "U1" H 3800 1050 50  0000 C CNN
+F 1 "ATmega32U4-AU" H 3800 950 50  0000 C CNN
+F 2 "Package_QFP:TQFP-44_10x10mm_P0.8mm" H 3400 2800 50  0001 C CIN
+F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/Atmel-7766-8-bit-AVR-ATmega16U4-32U4_Datasheet.pdf" H 3400 2800 50  0001 C CNN
+	1    3400 2800
+	1    0    0    -1  
+$EndComp
+Connection ~ 2800 2100
 $EndSCHEMATC

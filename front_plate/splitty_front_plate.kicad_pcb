@@ -1,9 +1,6 @@
-(kicad_pcb (version 4) (host pcbnew 4.0.7+dfsg1-1~bpo9+1)
+(kicad_pcb (version 20171130) (host pcbnew 5.1.9+dfsg1-1~bpo10+1)
 
   (general
-    (links 0)
-    (no_connects 34)
-    (area 47.549999 28.499999 181.050001 128.980001)
     (thickness 1.6)
     (drawings 17)
     (tracks 0)
@@ -13,6 +10,14 @@
   )
 
   (page A4)
+  (title_block
+    (title "Splitty front plate")
+    (date 2018-05-01)
+    (rev 1)
+    (comment 3 "License: MIT")
+    (comment 4 "Copyright © 2018 Nicolas Schodet")
+  )
+
   (layers
     (0 F.Cu signal)
     (31 B.Cu signal)
@@ -43,8 +48,6 @@
     (zone_clearance 0.21)
     (zone_45_only no)
     (trace_min 0.2)
-    (segment_width 0.2)
-    (edge_width 0.15)
     (via_size 0.6)
     (via_drill 0.4)
     (via_min_size 0.4)
@@ -54,6 +57,8 @@
     (uvias_allowed no)
     (uvia_min_size 0.2)
     (uvia_min_drill 0.1)
+    (edge_width 0.15)
+    (segment_width 0.2)
     (pcb_text_width 0.3)
     (pcb_text_size 1.5 1.5)
     (mod_edge_width 0.15)
@@ -67,6 +72,9 @@
     (pcbplotparams
       (layerselection 0x010fc_80000001)
       (usegerberextensions false)
+      (usegerberattributes true)
+      (usegerberadvancedattributes true)
+      (creategerberjobfile true)
       (excludeedgelayer true)
       (linewidth 0.100000)
       (plotframeref false)
@@ -75,8 +83,7 @@
       (useauxorigin false)
       (hpglpennumber 1)
       (hpglpenspeed 20)
-      (hpglpendiameter 15)
-      (hpglpenoverlay 2)
+      (hpglpendiameter 15.000000)
       (psnegative false)
       (psa4output false)
       (plotreference true)
@@ -88,7 +95,7 @@
       (mirror false)
       (drillshape 0)
       (scaleselection 1)
-      (outputdirectory gerber))
+      (outputdirectory "gerber"))
   )
 
   (net 0 "")
@@ -101,6 +108,7 @@
     (via_drill 0.4)
     (uvia_dia 0.3)
     (uvia_drill 0.1)
+    (add_net GND)
   )
 
   (module SMD_Packages:1Pin (layer B.Cu) (tedit 5B085C45) (tstamp 5B088D3F)
@@ -143,11 +151,11 @@
     (fp_text value Mounting_Hole (at 0 3.2) (layer F.Fab)
       (effects (font (size 1 1) (thickness 0.15)))
     )
+    (fp_circle (center 0 0) (end 2.45 0) (layer F.CrtYd) (width 0.05))
+    (fp_circle (center 0 0) (end 2.2 0) (layer Cmts.User) (width 0.15))
     (fp_text user %R (at 0.3 0) (layer F.Fab)
       (effects (font (size 1 1) (thickness 0.15)))
     )
-    (fp_circle (center 0 0) (end 2.2 0) (layer Cmts.User) (width 0.15))
-    (fp_circle (center 0 0) (end 2.45 0) (layer F.CrtYd) (width 0.05))
     (pad 1 np_thru_hole circle (at 0 0) (size 2.2 2.2) (drill 2.2) (layers *.Cu *.Mask))
   )
 
@@ -163,11 +171,11 @@
     (fp_text value Mounting_Hole (at 0 3.2) (layer F.Fab)
       (effects (font (size 1 1) (thickness 0.15)))
     )
+    (fp_circle (center 0 0) (end 2.45 0) (layer F.CrtYd) (width 0.05))
+    (fp_circle (center 0 0) (end 2.2 0) (layer Cmts.User) (width 0.15))
     (fp_text user %R (at 0.3 0) (layer F.Fab)
       (effects (font (size 1 1) (thickness 0.15)))
     )
-    (fp_circle (center 0 0) (end 2.2 0) (layer Cmts.User) (width 0.15))
-    (fp_circle (center 0 0) (end 2.45 0) (layer F.CrtYd) (width 0.05))
     (pad 1 np_thru_hole circle (at 0 0) (size 2.2 2.2) (drill 2.2) (layers *.Cu *.Mask))
   )
 
@@ -183,11 +191,11 @@
     (fp_text value Mounting_Hole (at 0 3.2) (layer F.Fab)
       (effects (font (size 1 1) (thickness 0.15)))
     )
+    (fp_circle (center 0 0) (end 2.45 0) (layer F.CrtYd) (width 0.05))
+    (fp_circle (center 0 0) (end 2.2 0) (layer Cmts.User) (width 0.15))
     (fp_text user %R (at 0.3 0) (layer F.Fab)
       (effects (font (size 1 1) (thickness 0.15)))
     )
-    (fp_circle (center 0 0) (end 2.2 0) (layer Cmts.User) (width 0.15))
-    (fp_circle (center 0 0) (end 2.45 0) (layer F.CrtYd) (width 0.05))
     (pad 1 np_thru_hole circle (at 0 0) (size 2.2 2.2) (drill 2.2) (layers *.Cu *.Mask))
   )
 
@@ -203,11 +211,11 @@
     (fp_text value Mounting_Hole (at 0 3.2) (layer F.Fab)
       (effects (font (size 1 1) (thickness 0.15)))
     )
+    (fp_circle (center 0 0) (end 2.45 0) (layer F.CrtYd) (width 0.05))
+    (fp_circle (center 0 0) (end 2.2 0) (layer Cmts.User) (width 0.15))
     (fp_text user %R (at 0.3 0) (layer F.Fab)
       (effects (font (size 1 1) (thickness 0.15)))
     )
-    (fp_circle (center 0 0) (end 2.2 0) (layer Cmts.User) (width 0.15))
-    (fp_circle (center 0 0) (end 2.45 0) (layer F.CrtYd) (width 0.05))
     (pad 1 np_thru_hole circle (at 0 0) (size 2.2 2.2) (drill 2.2) (layers *.Cu *.Mask))
   )
 
@@ -223,11 +231,11 @@
     (fp_text value Mounting_Hole (at 0 3.2) (layer F.Fab)
       (effects (font (size 1 1) (thickness 0.15)))
     )
+    (fp_circle (center 0 0) (end 2.45 0) (layer F.CrtYd) (width 0.05))
+    (fp_circle (center 0 0) (end 2.2 0) (layer Cmts.User) (width 0.15))
     (fp_text user %R (at 0.3 0) (layer F.Fab)
       (effects (font (size 1 1) (thickness 0.15)))
     )
-    (fp_circle (center 0 0) (end 2.2 0) (layer Cmts.User) (width 0.15))
-    (fp_circle (center 0 0) (end 2.45 0) (layer F.CrtYd) (width 0.05))
     (pad 1 np_thru_hole circle (at 0 0) (size 2.2 2.2) (drill 2.2) (layers *.Cu *.Mask))
   )
 
@@ -243,11 +251,11 @@
     (fp_text value Mounting_Hole (at 0 3.2) (layer F.Fab)
       (effects (font (size 1 1) (thickness 0.15)))
     )
+    (fp_circle (center 0 0) (end 2.45 0) (layer F.CrtYd) (width 0.05))
+    (fp_circle (center 0 0) (end 2.2 0) (layer Cmts.User) (width 0.15))
     (fp_text user %R (at 0.3 0) (layer F.Fab)
       (effects (font (size 1 1) (thickness 0.15)))
     )
-    (fp_circle (center 0 0) (end 2.2 0) (layer Cmts.User) (width 0.15))
-    (fp_circle (center 0 0) (end 2.45 0) (layer F.CrtYd) (width 0.05))
     (pad 1 np_thru_hole circle (at 0 0) (size 2.2 2.2) (drill 2.2) (layers *.Cu *.Mask))
   )
 
@@ -263,11 +271,11 @@
     (fp_text value Mounting_Hole (at 0 3.2) (layer F.Fab)
       (effects (font (size 1 1) (thickness 0.15)))
     )
+    (fp_circle (center 0 0) (end 2.45 0) (layer F.CrtYd) (width 0.05))
+    (fp_circle (center 0 0) (end 2.2 0) (layer Cmts.User) (width 0.15))
     (fp_text user %R (at 0.3 0) (layer F.Fab)
       (effects (font (size 1 1) (thickness 0.15)))
     )
-    (fp_circle (center 0 0) (end 2.2 0) (layer Cmts.User) (width 0.15))
-    (fp_circle (center 0 0) (end 2.45 0) (layer F.CrtYd) (width 0.05))
     (pad 1 np_thru_hole circle (at 0 0) (size 2.2 2.2) (drill 2.2) (layers *.Cu *.Mask))
   )
 
@@ -283,11 +291,11 @@
     (fp_text value Mounting_Hole (at 0 3.2) (layer F.Fab)
       (effects (font (size 1 1) (thickness 0.15)))
     )
+    (fp_circle (center 0 0) (end 2.45 0) (layer F.CrtYd) (width 0.05))
+    (fp_circle (center 0 0) (end 2.2 0) (layer Cmts.User) (width 0.15))
     (fp_text user %R (at 0.3 0) (layer F.Fab)
       (effects (font (size 1 1) (thickness 0.15)))
     )
-    (fp_circle (center 0 0) (end 2.2 0) (layer Cmts.User) (width 0.15))
-    (fp_circle (center 0 0) (end 2.45 0) (layer F.CrtYd) (width 0.05))
     (pad 1 np_thru_hole circle (at 0 0) (size 2.2 2.2) (drill 2.2) (layers *.Cu *.Mask))
   )
 
@@ -300,10 +308,10 @@
     (fp_text value MX_Cut (at 0 -0.5) (layer F.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
-    (fp_line (start 7 7) (end 7 -7) (layer Edge.Cuts) (width 0.15))
-    (fp_line (start -7 7) (end 7 7) (layer Edge.Cuts) (width 0.15))
-    (fp_line (start -7 -7) (end -7 7) (layer Edge.Cuts) (width 0.15))
     (fp_line (start 7 -7) (end -7 -7) (layer Edge.Cuts) (width 0.15))
+    (fp_line (start -7 -7) (end -7 7) (layer Edge.Cuts) (width 0.15))
+    (fp_line (start -7 7) (end 7 7) (layer Edge.Cuts) (width 0.15))
+    (fp_line (start 7 7) (end 7 -7) (layer Edge.Cuts) (width 0.15))
   )
 
   (module splitty:MX_Cut (layer F.Cu) (tedit 5B084371) (tstamp 5B08494F)
@@ -315,10 +323,10 @@
     (fp_text value MX_Cut (at 0 -0.5) (layer F.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
-    (fp_line (start 7 7) (end 7 -7) (layer Edge.Cuts) (width 0.15))
-    (fp_line (start -7 7) (end 7 7) (layer Edge.Cuts) (width 0.15))
-    (fp_line (start -7 -7) (end -7 7) (layer Edge.Cuts) (width 0.15))
     (fp_line (start 7 -7) (end -7 -7) (layer Edge.Cuts) (width 0.15))
+    (fp_line (start -7 -7) (end -7 7) (layer Edge.Cuts) (width 0.15))
+    (fp_line (start -7 7) (end 7 7) (layer Edge.Cuts) (width 0.15))
+    (fp_line (start 7 7) (end 7 -7) (layer Edge.Cuts) (width 0.15))
   )
 
   (module splitty:MX_Cut (layer F.Cu) (tedit 5B084371) (tstamp 5B08495E)
@@ -330,10 +338,10 @@
     (fp_text value MX_Cut (at 0 -0.5) (layer F.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
-    (fp_line (start 7 7) (end 7 -7) (layer Edge.Cuts) (width 0.15))
-    (fp_line (start -7 7) (end 7 7) (layer Edge.Cuts) (width 0.15))
-    (fp_line (start -7 -7) (end -7 7) (layer Edge.Cuts) (width 0.15))
     (fp_line (start 7 -7) (end -7 -7) (layer Edge.Cuts) (width 0.15))
+    (fp_line (start -7 -7) (end -7 7) (layer Edge.Cuts) (width 0.15))
+    (fp_line (start -7 7) (end 7 7) (layer Edge.Cuts) (width 0.15))
+    (fp_line (start 7 7) (end 7 -7) (layer Edge.Cuts) (width 0.15))
   )
 
   (module splitty:MX_Cut (layer F.Cu) (tedit 5B084371) (tstamp 5B08496D)
@@ -345,10 +353,10 @@
     (fp_text value MX_Cut (at 0 -0.5) (layer F.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
-    (fp_line (start 7 7) (end 7 -7) (layer Edge.Cuts) (width 0.15))
-    (fp_line (start -7 7) (end 7 7) (layer Edge.Cuts) (width 0.15))
-    (fp_line (start -7 -7) (end -7 7) (layer Edge.Cuts) (width 0.15))
     (fp_line (start 7 -7) (end -7 -7) (layer Edge.Cuts) (width 0.15))
+    (fp_line (start -7 -7) (end -7 7) (layer Edge.Cuts) (width 0.15))
+    (fp_line (start -7 7) (end 7 7) (layer Edge.Cuts) (width 0.15))
+    (fp_line (start 7 7) (end 7 -7) (layer Edge.Cuts) (width 0.15))
   )
 
   (module splitty:MX_Cut (layer F.Cu) (tedit 5B084371) (tstamp 5B084985)
@@ -360,10 +368,10 @@
     (fp_text value MX_Cut (at 0 -0.5) (layer F.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
-    (fp_line (start 7 7) (end 7 -7) (layer Edge.Cuts) (width 0.15))
-    (fp_line (start -7 7) (end 7 7) (layer Edge.Cuts) (width 0.15))
-    (fp_line (start -7 -7) (end -7 7) (layer Edge.Cuts) (width 0.15))
     (fp_line (start 7 -7) (end -7 -7) (layer Edge.Cuts) (width 0.15))
+    (fp_line (start -7 -7) (end -7 7) (layer Edge.Cuts) (width 0.15))
+    (fp_line (start -7 7) (end 7 7) (layer Edge.Cuts) (width 0.15))
+    (fp_line (start 7 7) (end 7 -7) (layer Edge.Cuts) (width 0.15))
   )
 
   (module splitty:MX_Cut (layer F.Cu) (tedit 5B084371) (tstamp 5B084994)
@@ -375,10 +383,10 @@
     (fp_text value MX_Cut (at 0 -0.5) (layer F.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
-    (fp_line (start 7 7) (end 7 -7) (layer Edge.Cuts) (width 0.15))
-    (fp_line (start -7 7) (end 7 7) (layer Edge.Cuts) (width 0.15))
-    (fp_line (start -7 -7) (end -7 7) (layer Edge.Cuts) (width 0.15))
     (fp_line (start 7 -7) (end -7 -7) (layer Edge.Cuts) (width 0.15))
+    (fp_line (start -7 -7) (end -7 7) (layer Edge.Cuts) (width 0.15))
+    (fp_line (start -7 7) (end 7 7) (layer Edge.Cuts) (width 0.15))
+    (fp_line (start 7 7) (end 7 -7) (layer Edge.Cuts) (width 0.15))
   )
 
   (module splitty:MX_Cut (layer F.Cu) (tedit 5B084371) (tstamp 5B0849A3)
@@ -390,10 +398,10 @@
     (fp_text value MX_Cut (at 0 -0.5) (layer F.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
-    (fp_line (start 7 7) (end 7 -7) (layer Edge.Cuts) (width 0.15))
-    (fp_line (start -7 7) (end 7 7) (layer Edge.Cuts) (width 0.15))
-    (fp_line (start -7 -7) (end -7 7) (layer Edge.Cuts) (width 0.15))
     (fp_line (start 7 -7) (end -7 -7) (layer Edge.Cuts) (width 0.15))
+    (fp_line (start -7 -7) (end -7 7) (layer Edge.Cuts) (width 0.15))
+    (fp_line (start -7 7) (end 7 7) (layer Edge.Cuts) (width 0.15))
+    (fp_line (start 7 7) (end 7 -7) (layer Edge.Cuts) (width 0.15))
   )
 
   (module splitty:MX_Cut (layer F.Cu) (tedit 5B084371) (tstamp 5B0849B2)
@@ -405,10 +413,10 @@
     (fp_text value MX_Cut (at 0 -0.5) (layer F.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
-    (fp_line (start 7 7) (end 7 -7) (layer Edge.Cuts) (width 0.15))
-    (fp_line (start -7 7) (end 7 7) (layer Edge.Cuts) (width 0.15))
-    (fp_line (start -7 -7) (end -7 7) (layer Edge.Cuts) (width 0.15))
     (fp_line (start 7 -7) (end -7 -7) (layer Edge.Cuts) (width 0.15))
+    (fp_line (start -7 -7) (end -7 7) (layer Edge.Cuts) (width 0.15))
+    (fp_line (start -7 7) (end 7 7) (layer Edge.Cuts) (width 0.15))
+    (fp_line (start 7 7) (end 7 -7) (layer Edge.Cuts) (width 0.15))
   )
 
   (module splitty:MX_Cut (layer F.Cu) (tedit 5B084371) (tstamp 5B0849C1)
@@ -420,10 +428,10 @@
     (fp_text value MX_Cut (at 0 -0.5) (layer F.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
-    (fp_line (start 7 7) (end 7 -7) (layer Edge.Cuts) (width 0.15))
-    (fp_line (start -7 7) (end 7 7) (layer Edge.Cuts) (width 0.15))
-    (fp_line (start -7 -7) (end -7 7) (layer Edge.Cuts) (width 0.15))
     (fp_line (start 7 -7) (end -7 -7) (layer Edge.Cuts) (width 0.15))
+    (fp_line (start -7 -7) (end -7 7) (layer Edge.Cuts) (width 0.15))
+    (fp_line (start -7 7) (end 7 7) (layer Edge.Cuts) (width 0.15))
+    (fp_line (start 7 7) (end 7 -7) (layer Edge.Cuts) (width 0.15))
   )
 
   (module splitty:MX_Cut (layer F.Cu) (tedit 5B084371) (tstamp 5B0849D0)
@@ -435,10 +443,10 @@
     (fp_text value MX_Cut (at 0 -0.5) (layer F.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
-    (fp_line (start 7 7) (end 7 -7) (layer Edge.Cuts) (width 0.15))
-    (fp_line (start -7 7) (end 7 7) (layer Edge.Cuts) (width 0.15))
-    (fp_line (start -7 -7) (end -7 7) (layer Edge.Cuts) (width 0.15))
     (fp_line (start 7 -7) (end -7 -7) (layer Edge.Cuts) (width 0.15))
+    (fp_line (start -7 -7) (end -7 7) (layer Edge.Cuts) (width 0.15))
+    (fp_line (start -7 7) (end 7 7) (layer Edge.Cuts) (width 0.15))
+    (fp_line (start 7 7) (end 7 -7) (layer Edge.Cuts) (width 0.15))
   )
 
   (module splitty:MX_Cut (layer F.Cu) (tedit 5B084371) (tstamp 5B0849DF)
@@ -450,10 +458,10 @@
     (fp_text value MX_Cut (at 0 -0.5) (layer F.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
-    (fp_line (start 7 7) (end 7 -7) (layer Edge.Cuts) (width 0.15))
-    (fp_line (start -7 7) (end 7 7) (layer Edge.Cuts) (width 0.15))
-    (fp_line (start -7 -7) (end -7 7) (layer Edge.Cuts) (width 0.15))
     (fp_line (start 7 -7) (end -7 -7) (layer Edge.Cuts) (width 0.15))
+    (fp_line (start -7 -7) (end -7 7) (layer Edge.Cuts) (width 0.15))
+    (fp_line (start -7 7) (end 7 7) (layer Edge.Cuts) (width 0.15))
+    (fp_line (start 7 7) (end 7 -7) (layer Edge.Cuts) (width 0.15))
   )
 
   (module splitty:MX_Cut (layer F.Cu) (tedit 5B084371) (tstamp 5B0849EE)
@@ -465,10 +473,10 @@
     (fp_text value MX_Cut (at 0 -0.5) (layer F.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
-    (fp_line (start 7 7) (end 7 -7) (layer Edge.Cuts) (width 0.15))
-    (fp_line (start -7 7) (end 7 7) (layer Edge.Cuts) (width 0.15))
-    (fp_line (start -7 -7) (end -7 7) (layer Edge.Cuts) (width 0.15))
     (fp_line (start 7 -7) (end -7 -7) (layer Edge.Cuts) (width 0.15))
+    (fp_line (start -7 -7) (end -7 7) (layer Edge.Cuts) (width 0.15))
+    (fp_line (start -7 7) (end 7 7) (layer Edge.Cuts) (width 0.15))
+    (fp_line (start 7 7) (end 7 -7) (layer Edge.Cuts) (width 0.15))
   )
 
   (module splitty:MX_Cut (layer F.Cu) (tedit 5B084371) (tstamp 5B0849FD)
@@ -480,10 +488,10 @@
     (fp_text value MX_Cut (at 0 -0.5) (layer F.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
-    (fp_line (start 7 7) (end 7 -7) (layer Edge.Cuts) (width 0.15))
-    (fp_line (start -7 7) (end 7 7) (layer Edge.Cuts) (width 0.15))
-    (fp_line (start -7 -7) (end -7 7) (layer Edge.Cuts) (width 0.15))
     (fp_line (start 7 -7) (end -7 -7) (layer Edge.Cuts) (width 0.15))
+    (fp_line (start -7 -7) (end -7 7) (layer Edge.Cuts) (width 0.15))
+    (fp_line (start -7 7) (end 7 7) (layer Edge.Cuts) (width 0.15))
+    (fp_line (start 7 7) (end 7 -7) (layer Edge.Cuts) (width 0.15))
   )
 
   (module splitty:MX_Cut (layer F.Cu) (tedit 5B084371) (tstamp 5B084A13)
@@ -495,10 +503,10 @@
     (fp_text value MX_Cut (at 0 -0.5) (layer F.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
-    (fp_line (start 7 7) (end 7 -7) (layer Edge.Cuts) (width 0.15))
-    (fp_line (start -7 7) (end 7 7) (layer Edge.Cuts) (width 0.15))
-    (fp_line (start -7 -7) (end -7 7) (layer Edge.Cuts) (width 0.15))
     (fp_line (start 7 -7) (end -7 -7) (layer Edge.Cuts) (width 0.15))
+    (fp_line (start -7 -7) (end -7 7) (layer Edge.Cuts) (width 0.15))
+    (fp_line (start -7 7) (end 7 7) (layer Edge.Cuts) (width 0.15))
+    (fp_line (start 7 7) (end 7 -7) (layer Edge.Cuts) (width 0.15))
   )
 
   (module splitty:MX_Cut (layer F.Cu) (tedit 5B084371) (tstamp 5B084A22)
@@ -510,10 +518,10 @@
     (fp_text value MX_Cut (at 0 -0.5) (layer F.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
-    (fp_line (start 7 7) (end 7 -7) (layer Edge.Cuts) (width 0.15))
-    (fp_line (start -7 7) (end 7 7) (layer Edge.Cuts) (width 0.15))
-    (fp_line (start -7 -7) (end -7 7) (layer Edge.Cuts) (width 0.15))
     (fp_line (start 7 -7) (end -7 -7) (layer Edge.Cuts) (width 0.15))
+    (fp_line (start -7 -7) (end -7 7) (layer Edge.Cuts) (width 0.15))
+    (fp_line (start -7 7) (end 7 7) (layer Edge.Cuts) (width 0.15))
+    (fp_line (start 7 7) (end 7 -7) (layer Edge.Cuts) (width 0.15))
   )
 
   (module splitty:MX_Cut (layer F.Cu) (tedit 5B084371) (tstamp 5B084A31)
@@ -525,10 +533,10 @@
     (fp_text value MX_Cut (at 0 -0.5) (layer F.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
-    (fp_line (start 7 7) (end 7 -7) (layer Edge.Cuts) (width 0.15))
-    (fp_line (start -7 7) (end 7 7) (layer Edge.Cuts) (width 0.15))
-    (fp_line (start -7 -7) (end -7 7) (layer Edge.Cuts) (width 0.15))
     (fp_line (start 7 -7) (end -7 -7) (layer Edge.Cuts) (width 0.15))
+    (fp_line (start -7 -7) (end -7 7) (layer Edge.Cuts) (width 0.15))
+    (fp_line (start -7 7) (end 7 7) (layer Edge.Cuts) (width 0.15))
+    (fp_line (start 7 7) (end 7 -7) (layer Edge.Cuts) (width 0.15))
   )
 
   (module splitty:MX_Cut (layer F.Cu) (tedit 5B084371) (tstamp 5B084A40)
@@ -540,10 +548,10 @@
     (fp_text value MX_Cut (at 0 -0.5) (layer F.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
-    (fp_line (start 7 7) (end 7 -7) (layer Edge.Cuts) (width 0.15))
-    (fp_line (start -7 7) (end 7 7) (layer Edge.Cuts) (width 0.15))
-    (fp_line (start -7 -7) (end -7 7) (layer Edge.Cuts) (width 0.15))
     (fp_line (start 7 -7) (end -7 -7) (layer Edge.Cuts) (width 0.15))
+    (fp_line (start -7 -7) (end -7 7) (layer Edge.Cuts) (width 0.15))
+    (fp_line (start -7 7) (end 7 7) (layer Edge.Cuts) (width 0.15))
+    (fp_line (start 7 7) (end 7 -7) (layer Edge.Cuts) (width 0.15))
   )
 
   (module splitty:MX_Cut (layer F.Cu) (tedit 5B084371) (tstamp 5B084A4F)
@@ -555,10 +563,10 @@
     (fp_text value MX_Cut (at 0 -0.5) (layer F.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
-    (fp_line (start 7 7) (end 7 -7) (layer Edge.Cuts) (width 0.15))
-    (fp_line (start -7 7) (end 7 7) (layer Edge.Cuts) (width 0.15))
-    (fp_line (start -7 -7) (end -7 7) (layer Edge.Cuts) (width 0.15))
     (fp_line (start 7 -7) (end -7 -7) (layer Edge.Cuts) (width 0.15))
+    (fp_line (start -7 -7) (end -7 7) (layer Edge.Cuts) (width 0.15))
+    (fp_line (start -7 7) (end 7 7) (layer Edge.Cuts) (width 0.15))
+    (fp_line (start 7 7) (end 7 -7) (layer Edge.Cuts) (width 0.15))
   )
 
   (module splitty:MX_Cut (layer F.Cu) (tedit 5B084371) (tstamp 5B084A5E)
@@ -570,10 +578,10 @@
     (fp_text value MX_Cut (at 0 -0.5) (layer F.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
-    (fp_line (start 7 7) (end 7 -7) (layer Edge.Cuts) (width 0.15))
-    (fp_line (start -7 7) (end 7 7) (layer Edge.Cuts) (width 0.15))
-    (fp_line (start -7 -7) (end -7 7) (layer Edge.Cuts) (width 0.15))
     (fp_line (start 7 -7) (end -7 -7) (layer Edge.Cuts) (width 0.15))
+    (fp_line (start -7 -7) (end -7 7) (layer Edge.Cuts) (width 0.15))
+    (fp_line (start -7 7) (end 7 7) (layer Edge.Cuts) (width 0.15))
+    (fp_line (start 7 7) (end 7 -7) (layer Edge.Cuts) (width 0.15))
   )
 
   (module splitty:MX_Cut (layer F.Cu) (tedit 5B084371) (tstamp 5B084A6D)
@@ -585,10 +593,10 @@
     (fp_text value MX_Cut (at 0 -0.5) (layer F.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
-    (fp_line (start 7 7) (end 7 -7) (layer Edge.Cuts) (width 0.15))
-    (fp_line (start -7 7) (end 7 7) (layer Edge.Cuts) (width 0.15))
-    (fp_line (start -7 -7) (end -7 7) (layer Edge.Cuts) (width 0.15))
     (fp_line (start 7 -7) (end -7 -7) (layer Edge.Cuts) (width 0.15))
+    (fp_line (start -7 -7) (end -7 7) (layer Edge.Cuts) (width 0.15))
+    (fp_line (start -7 7) (end 7 7) (layer Edge.Cuts) (width 0.15))
+    (fp_line (start 7 7) (end 7 -7) (layer Edge.Cuts) (width 0.15))
   )
 
   (module splitty:MX_Cut (layer F.Cu) (tedit 5B084371) (tstamp 5B084AD0)
@@ -600,10 +608,10 @@
     (fp_text value MX_Cut (at 0 -0.5) (layer F.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
-    (fp_line (start 7 7) (end 7 -7) (layer Edge.Cuts) (width 0.15))
-    (fp_line (start -7 7) (end 7 7) (layer Edge.Cuts) (width 0.15))
-    (fp_line (start -7 -7) (end -7 7) (layer Edge.Cuts) (width 0.15))
     (fp_line (start 7 -7) (end -7 -7) (layer Edge.Cuts) (width 0.15))
+    (fp_line (start -7 -7) (end -7 7) (layer Edge.Cuts) (width 0.15))
+    (fp_line (start -7 7) (end 7 7) (layer Edge.Cuts) (width 0.15))
+    (fp_line (start 7 7) (end 7 -7) (layer Edge.Cuts) (width 0.15))
   )
 
   (module splitty:MX_Cut (layer F.Cu) (tedit 5B084371) (tstamp 5B084ADF)
@@ -615,10 +623,10 @@
     (fp_text value MX_Cut (at 0 -0.5) (layer F.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
-    (fp_line (start 7 7) (end 7 -7) (layer Edge.Cuts) (width 0.15))
-    (fp_line (start -7 7) (end 7 7) (layer Edge.Cuts) (width 0.15))
-    (fp_line (start -7 -7) (end -7 7) (layer Edge.Cuts) (width 0.15))
     (fp_line (start 7 -7) (end -7 -7) (layer Edge.Cuts) (width 0.15))
+    (fp_line (start -7 -7) (end -7 7) (layer Edge.Cuts) (width 0.15))
+    (fp_line (start -7 7) (end 7 7) (layer Edge.Cuts) (width 0.15))
+    (fp_line (start 7 7) (end 7 -7) (layer Edge.Cuts) (width 0.15))
   )
 
   (module splitty:MX_Cut (layer F.Cu) (tedit 5B084371) (tstamp 5B084AEE)
@@ -630,10 +638,10 @@
     (fp_text value MX_Cut (at 0 -0.5) (layer F.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
-    (fp_line (start 7 7) (end 7 -7) (layer Edge.Cuts) (width 0.15))
-    (fp_line (start -7 7) (end 7 7) (layer Edge.Cuts) (width 0.15))
-    (fp_line (start -7 -7) (end -7 7) (layer Edge.Cuts) (width 0.15))
     (fp_line (start 7 -7) (end -7 -7) (layer Edge.Cuts) (width 0.15))
+    (fp_line (start -7 -7) (end -7 7) (layer Edge.Cuts) (width 0.15))
+    (fp_line (start -7 7) (end 7 7) (layer Edge.Cuts) (width 0.15))
+    (fp_line (start 7 7) (end 7 -7) (layer Edge.Cuts) (width 0.15))
   )
 
   (module splitty:MX_Cut (layer F.Cu) (tedit 5B084371) (tstamp 5B084AFE)
@@ -645,10 +653,10 @@
     (fp_text value MX_Cut (at 0 -0.5) (layer F.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
-    (fp_line (start 7 7) (end 7 -7) (layer Edge.Cuts) (width 0.15))
-    (fp_line (start -7 7) (end 7 7) (layer Edge.Cuts) (width 0.15))
-    (fp_line (start -7 -7) (end -7 7) (layer Edge.Cuts) (width 0.15))
     (fp_line (start 7 -7) (end -7 -7) (layer Edge.Cuts) (width 0.15))
+    (fp_line (start -7 -7) (end -7 7) (layer Edge.Cuts) (width 0.15))
+    (fp_line (start -7 7) (end 7 7) (layer Edge.Cuts) (width 0.15))
+    (fp_line (start 7 7) (end 7 -7) (layer Edge.Cuts) (width 0.15))
   )
 
   (module splitty:MX_Cut (layer F.Cu) (tedit 5B084371) (tstamp 5B084B11)
@@ -660,10 +668,10 @@
     (fp_text value MX_Cut (at 0 -0.5) (layer F.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
-    (fp_line (start 7 7) (end 7 -7) (layer Edge.Cuts) (width 0.15))
-    (fp_line (start -7 7) (end 7 7) (layer Edge.Cuts) (width 0.15))
-    (fp_line (start -7 -7) (end -7 7) (layer Edge.Cuts) (width 0.15))
     (fp_line (start 7 -7) (end -7 -7) (layer Edge.Cuts) (width 0.15))
+    (fp_line (start -7 -7) (end -7 7) (layer Edge.Cuts) (width 0.15))
+    (fp_line (start -7 7) (end 7 7) (layer Edge.Cuts) (width 0.15))
+    (fp_line (start 7 7) (end 7 -7) (layer Edge.Cuts) (width 0.15))
   )
 
   (module splitty:MX_Cut (layer F.Cu) (tedit 5B084371) (tstamp 5B084B20)
@@ -675,10 +683,10 @@
     (fp_text value MX_Cut (at 0 -0.5) (layer F.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
-    (fp_line (start 7 7) (end 7 -7) (layer Edge.Cuts) (width 0.15))
-    (fp_line (start -7 7) (end 7 7) (layer Edge.Cuts) (width 0.15))
-    (fp_line (start -7 -7) (end -7 7) (layer Edge.Cuts) (width 0.15))
     (fp_line (start 7 -7) (end -7 -7) (layer Edge.Cuts) (width 0.15))
+    (fp_line (start -7 -7) (end -7 7) (layer Edge.Cuts) (width 0.15))
+    (fp_line (start -7 7) (end 7 7) (layer Edge.Cuts) (width 0.15))
+    (fp_line (start 7 7) (end 7 -7) (layer Edge.Cuts) (width 0.15))
   )
 
   (module splitty:MX_Cut (layer F.Cu) (tedit 5B084371) (tstamp 5B084B2F)
@@ -690,10 +698,10 @@
     (fp_text value MX_Cut (at 0 -0.5) (layer F.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
-    (fp_line (start 7 7) (end 7 -7) (layer Edge.Cuts) (width 0.15))
-    (fp_line (start -7 7) (end 7 7) (layer Edge.Cuts) (width 0.15))
-    (fp_line (start -7 -7) (end -7 7) (layer Edge.Cuts) (width 0.15))
     (fp_line (start 7 -7) (end -7 -7) (layer Edge.Cuts) (width 0.15))
+    (fp_line (start -7 -7) (end -7 7) (layer Edge.Cuts) (width 0.15))
+    (fp_line (start -7 7) (end 7 7) (layer Edge.Cuts) (width 0.15))
+    (fp_line (start 7 7) (end 7 -7) (layer Edge.Cuts) (width 0.15))
   )
 
   (module splitty:MX_Cut (layer F.Cu) (tedit 5B084371) (tstamp 5B084B3E)
@@ -705,10 +713,10 @@
     (fp_text value MX_Cut (at 0 -0.5) (layer F.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
-    (fp_line (start 7 7) (end 7 -7) (layer Edge.Cuts) (width 0.15))
-    (fp_line (start -7 7) (end 7 7) (layer Edge.Cuts) (width 0.15))
-    (fp_line (start -7 -7) (end -7 7) (layer Edge.Cuts) (width 0.15))
     (fp_line (start 7 -7) (end -7 -7) (layer Edge.Cuts) (width 0.15))
+    (fp_line (start -7 -7) (end -7 7) (layer Edge.Cuts) (width 0.15))
+    (fp_line (start -7 7) (end 7 7) (layer Edge.Cuts) (width 0.15))
+    (fp_line (start 7 7) (end 7 -7) (layer Edge.Cuts) (width 0.15))
   )
 
   (module splitty:MX_Cut (layer F.Cu) (tedit 5B084371) (tstamp 5B084B4D)
@@ -720,10 +728,10 @@
     (fp_text value MX_Cut (at 0 -0.5) (layer F.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
-    (fp_line (start 7 7) (end 7 -7) (layer Edge.Cuts) (width 0.15))
-    (fp_line (start -7 7) (end 7 7) (layer Edge.Cuts) (width 0.15))
-    (fp_line (start -7 -7) (end -7 7) (layer Edge.Cuts) (width 0.15))
     (fp_line (start 7 -7) (end -7 -7) (layer Edge.Cuts) (width 0.15))
+    (fp_line (start -7 -7) (end -7 7) (layer Edge.Cuts) (width 0.15))
+    (fp_line (start -7 7) (end 7 7) (layer Edge.Cuts) (width 0.15))
+    (fp_line (start 7 7) (end 7 -7) (layer Edge.Cuts) (width 0.15))
   )
 
   (module splitty:MX_Cut (layer F.Cu) (tedit 5B084371) (tstamp 5B084B5C)
@@ -735,10 +743,10 @@
     (fp_text value MX_Cut (at 0 -0.5) (layer F.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
-    (fp_line (start 7 7) (end 7 -7) (layer Edge.Cuts) (width 0.15))
-    (fp_line (start -7 7) (end 7 7) (layer Edge.Cuts) (width 0.15))
-    (fp_line (start -7 -7) (end -7 7) (layer Edge.Cuts) (width 0.15))
     (fp_line (start 7 -7) (end -7 -7) (layer Edge.Cuts) (width 0.15))
+    (fp_line (start -7 -7) (end -7 7) (layer Edge.Cuts) (width 0.15))
+    (fp_line (start -7 7) (end 7 7) (layer Edge.Cuts) (width 0.15))
+    (fp_line (start 7 7) (end 7 -7) (layer Edge.Cuts) (width 0.15))
   )
 
   (module splitty:MX_Cut (layer F.Cu) (tedit 5B084371) (tstamp 5B084B6B)
@@ -750,10 +758,10 @@
     (fp_text value MX_Cut (at 0 -0.5) (layer F.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
-    (fp_line (start 7 7) (end 7 -7) (layer Edge.Cuts) (width 0.15))
-    (fp_line (start -7 7) (end 7 7) (layer Edge.Cuts) (width 0.15))
-    (fp_line (start -7 -7) (end -7 7) (layer Edge.Cuts) (width 0.15))
     (fp_line (start 7 -7) (end -7 -7) (layer Edge.Cuts) (width 0.15))
+    (fp_line (start -7 -7) (end -7 7) (layer Edge.Cuts) (width 0.15))
+    (fp_line (start -7 7) (end 7 7) (layer Edge.Cuts) (width 0.15))
+    (fp_line (start 7 7) (end 7 -7) (layer Edge.Cuts) (width 0.15))
   )
 
   (module splitty:MX_Cut (layer F.Cu) (tedit 5B084371) (tstamp 5B084B7A)
@@ -765,10 +773,10 @@
     (fp_text value MX_Cut (at 0 -0.5) (layer F.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
-    (fp_line (start 7 7) (end 7 -7) (layer Edge.Cuts) (width 0.15))
-    (fp_line (start -7 7) (end 7 7) (layer Edge.Cuts) (width 0.15))
-    (fp_line (start -7 -7) (end -7 7) (layer Edge.Cuts) (width 0.15))
     (fp_line (start 7 -7) (end -7 -7) (layer Edge.Cuts) (width 0.15))
+    (fp_line (start -7 -7) (end -7 7) (layer Edge.Cuts) (width 0.15))
+    (fp_line (start -7 7) (end 7 7) (layer Edge.Cuts) (width 0.15))
+    (fp_line (start 7 7) (end 7 -7) (layer Edge.Cuts) (width 0.15))
   )
 
   (dimension 14 (width 0.3) (layer Eco2.User)
